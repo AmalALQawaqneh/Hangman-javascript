@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #61dafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    background-color: #20232a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#hangman-canvas {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#word-display {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#alphabet-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#alphabet-buttons button {
+    background-color: #61dafb;
+    color: #20232a;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#alphabet-buttons button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.1);
+}
+
+#alphabet-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #20232a;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #21a1f1;
+}
